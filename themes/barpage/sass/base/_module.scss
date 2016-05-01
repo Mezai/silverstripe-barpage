@@ -1,0 +1,39 @@
+h1 {
+	text-align:center;
+}
+
+html {
+	position: relative;
+  min-height: 100%;
+
+}
+
+body {
+	height:100%;
+	background-color: $grey !important;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  margin-bottom: 60px;
+  line-height: 16px;
+  > #wrap > .container {
+    margin-bottom: 60px;
+  }
+}
+
+a {
+	color: $black !important;
+}
+
+li {
+	font-size: 85%;
+}
+
+
+.well.well-sm {
+	background: $yellow;
+	border: 1px solid $orange;
+
+}
+
+
+

@@ -1,0 +1,108 @@
+form {
+    border:none;
+    margin:0;
+    padding:0px;
+
+	input[type="text"], input[type="password"] {
+	
+    height: 30px;
+	border: 1px solid $grey;
+	font-size: 16px;
+	@include transition(all 0.1s linear);
+	
+    }
+}
+
+fieldset {
+	border:none;
+    margin:0;
+    padding:0px;
+}
+.form {
+    width: 100%;
+	max-width:300px;
+	margin:0 auto 5px auto;
+	padding:10px;
+	border:1px solid $orange;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: $white;
+
+    h3 {
+        color:$blue;
+        text-align: center;
+    }
+}
+
+
+#Remember{
+	margin-top:10px;
+}
+
+#ForgotPassword {
+    margin-top:10px;
+    text-align: center;
+}
+.Actions {
+	margin-top:10px;
+    .action  {
+    background-color: $orange;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: $white;
+    font-size: 14px;
+    padding: 6px 19px;
+    vertical-align: middle;
+    text-align: center;
+    width:100%;
+    &:hover {
+        background-image: linear-gradient(to bottom, $orange, darken($orange, 20));
+        background-repeat: repeat-x;
+        }
+    }
+}
+
+input.text {
+	background: linear-gradient(#EAEAEA, #FFFFFF 10%) repeat scroll 0 0 / 100% auto #FFFFFF;
+    border: 1px solid $grey;
+    border-radius: 4px 4px 4px 4px;
+    line-height: 16px;
+    margin: 0;
+    outline: medium none;
+    padding: 7px;
+    transition: border 0.2s ease-in 0s;
+	width:100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: $grey;
+    @include box-shadow-inset(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(137, 157, 151, 0.6));  
+}
+
+.checkbox {
+    text-align: center;
+    input[type="checkbox"] {
+    margin-left: 0px !important;
+    display: inline-block;
+    }
+}
+
+
+
+.field label.left {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 8px 8px 8px 0;
+    text-shadow: 1px 1px 0 white;
+    width: 100%;
+}
